@@ -1,0 +1,6 @@
+ 
+git add .
+git commit -m "hello_world.txtを作成"
+git add .
+git commit -m "hello_world.txtに追記"
+git log --oneline
