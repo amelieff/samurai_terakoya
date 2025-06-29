@@ -1,0 +1,5 @@
+git add hello_world.txt
+git commit -m "add hello_world.txt"
+git add hello_world.txt
+git commit -m "add Japanese message"
+git log --oneline
