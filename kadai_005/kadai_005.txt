@@ -1,0 +1,18 @@
+# Step1
+git clone git@github.com:amelieff/samurai_terakoya.git
+git checkout main
+git pull origin main
+git checkout -b iijimal
+
+# Step2
+vim hello_world.txt
+git add hello_world.txt
+git commit -m 'Hello, world!を記載'
+
+# Step3
+vim hello_world.txt
+git add hello_world.txt
+git commit -m 'こんにちは、世界！を記載'
+
+# Step4
+git log --oneline
