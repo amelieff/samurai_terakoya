@@ -1,5 +1,10 @@
+git init
+vi hello_world.txt
+# Hello, world!を記入
 git add hello_world.txt
 git commit -m "add hello_world.txt"
+vi hello_world.txt
+# こんにちは、世界！を記入
 git add hello_world.txt
 git commit -m "add Japanese message"
 git log --oneline
