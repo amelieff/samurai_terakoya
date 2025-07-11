@@ -1,0 +1,58 @@
+PS C:\Users\kubokawam\Documents\4amelieff> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\kubokawam\Documents\4amelieff
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/07/11     14:43                git_challenge
+
+
+PS C:\Users\kubokawam\Documents\4amelieff> cd .\git_challenge\
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git init
+Initialized empty Git repository in C:/Users/kubokawam/Documents/4amelieff/git_challenge/.git/
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> echo "hello world" > hello_world.txt
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git add .\hello_world.txt
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git commit -m "add new file"
+[main (root-commit) 1ff8fa2] add new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge>  git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> echo "こんにちは世界！"  >> .\hello_world.txt
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> cat .\hello_world.txt
+hello world
+こんにちは世界！
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git diff .\hello_world.txt
+diff --git a/hello_world.txt b/hello_world.txt
+index 8099378..36453fe 100644
+Binary files a/hello_world.txt and b/hello_world.txt differ
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git add .\hello_world.txt
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git commit -m "edited hello world file"
+[main 0cc7ab3] edited hello world file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git log
+commit 0cc7ab3861e4c190a98e117663166947c1f76315 (HEAD -> main)
+Author: kubokawa-mi <kubokawam@amelieff.jp>
+Date:   Fri Jul 11 14:46:14 2025 +0900
+
+    edited hello world file
+
+commit 1ff8fa2e0b835089df64d94b8192bab30b3cbfa7
+Author: kubokawa-mi <kubokawam@amelieff.jp>
+Date:   Fri Jul 11 14:44:36 2025 +0900
+
+    add new file
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git log --oneline
+0cc7ab3 (HEAD -> main) edited hello world file
+1ff8fa2 add new file
