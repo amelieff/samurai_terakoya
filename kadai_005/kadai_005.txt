@@ -12,7 +12,7 @@ d-----        2025/07/11     14:43                git_challenge
 PS C:\Users\kubokawam\Documents\4amelieff> cd .\git_challenge\
 PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git init
 Initialized empty Git repository in C:/Users/kubokawam/Documents/4amelieff/git_challenge/.git/
-PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> echo "hello world" > hello_world.txt
+PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> echo "Hello, World!" > hello_world.txt
 PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git add .\hello_world.txt
 PS C:\Users\kubokawam\Documents\4amelieff\git_challenge> git commit -m "add new file hello_world.txt"
 [main (root-commit) 1ff8fa2] add new file hello_world.txt
